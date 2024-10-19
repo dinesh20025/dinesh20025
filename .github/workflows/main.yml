@@ -1,2 +1,6 @@
-              - name: Checkout
-                uses: actions/checkout@v4.2.1
+steps:
+  - uses: actions/checkout@v4.2.1
+  - name: npm install and build webpack
+    run: |
+      npm install
+      npm run build
